@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+body {
+    background-color: #ff577f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Fraunces';
+    font-weight: bold;
+    font-size: 90px;
+    color: indigo;
+    position: relative;
+    text-align: center;
+}
+
+.circle {
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #cdfffc, #c0e218);
+    position: relative;
+    top: -8em;
+    left: 4em;
+}
+
+.triangle {
+    display: inline-block;
+    width: 0;
+    border-top: 200px solid #fecd1a;
+    border-left: 130px solid transparent;
+    border-right: 130px solid transparent;
+    position: relative;
+    top: 17em;
+}
+.random {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 1000% 50px 90px;
+    background: linear-gradient(to right, #65d6ce, #a685e2, #654062);
+    transform: rotate(-135deg);
+}
+
+.glass {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 30px 30px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 80px;
+    backdrop-filter: blur(10px);
+}
